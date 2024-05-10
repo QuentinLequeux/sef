@@ -1,0 +1,19 @@
+// cd wp-content/themes/sef/resources/sass/style.scss
+// sass —watch style.scss:../css/style.css
+
+html, html * {
+  box-sizing: border-box;
+
+  body {
+    background-color: #FDF1D5;
+    font-family: lato, sans-serif;
+  }
+}
+
+@import "reset";
+@import "fonts";
+@import "helpers";
+
+@import "components/nav";
+@import "components/footer";
+@import "components/donate";

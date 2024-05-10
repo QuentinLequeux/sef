@@ -5,5 +5,9 @@
 wp-content/*
 !wp-content/themes/
 wp-content/themes/*
-!wp-content/themes/intro-wp
-!wp-content/themes/intro-wp/*
+!wp-content/themes/sef
+!wp-content/themes/sef/*
+!wp-content/themes/sef/resources/*
+!wp-content/themes/sef/resources/css/*
+!wp-content/themes/sef/resources/sass/*
+!wp-content/themes/sef/resources/sass/components/*
