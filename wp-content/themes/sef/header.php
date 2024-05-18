@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
 </head>
 <body>
-<h1>
-    <?= get_bloginfo('name') ?>
-</h1>
-<nav class="nav">
-    <div class="wrapper">
-        <h2 class="sro">Navigation principale</h2>
-        <?php wp_nav_menu(['theme_location' => 'main']); ?>
-    </div>
-</nav>
+<header>
+    <h1 class="sro">
+        <?= get_bloginfo('name') ?>
+    </h1>
+    <nav class="nav">
+        <div class="wrapper">
+            <h2 class="sro">Navigation principale</h2>
+            <?php wp_nav_menu(['theme_location' => 'main']); ?>
+        </div>
+    </nav>
+</header>

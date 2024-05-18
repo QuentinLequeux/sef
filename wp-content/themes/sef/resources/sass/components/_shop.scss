@@ -1,0 +1,71 @@
+html {
+
+  margin-top: 0 !important;
+
+  .shopp {
+
+    .map__title {
+      width: 80vw;
+      margin: 10rem auto 0;
+      font-size: 2.488125rem;
+      font-weight: 500;
+    }
+
+    .map {
+      background-color: #fff;
+      width: 80vw;
+      height: 700px;
+      margin: 3.25rem auto 0; //15.625rem
+      border-radius: 30px;
+    }
+  }
+
+  .shop1, .shop2, .shop3 {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.875rem;
+    padding-top: 5rem;
+
+    &__support {
+      max-width: 50%;
+      margin: auto 0;
+    }
+
+    &__title {
+      font-size: 2.07375rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__text {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      //margin-bottom: 1.5rem;
+    }
+
+    &__image {
+      max-width: 50%;
+
+      img {
+        height: 400px;
+        width: 600px;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .shop2 {
+    &__image {
+      order: 2;
+    }
+
+    &__support {
+      order: 1;
+    }
+  }
+
+  .shop3 {
+
+    padding-bottom: 5rem;
+  }
+}

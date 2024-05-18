@@ -1,4 +1,4 @@
-.nav {
+header {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,30 +8,37 @@
   z-index: 1;
   box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
 
-  .menu {
-    display: flex;
-    width: 80vw;
-    margin: auto;
-    gap: 3rem;
-  }
+  .nav {
 
-  .menu li {
-    padding: 1.5rem 0;
-  }
+    .menu {
+      display: flex;
+      width: 80vw;
+      margin: auto;
+      gap: 3rem;
+    }
 
-  a:hover {
-    color: #C1111F;
-  }
+    .menu li {
+      padding: 1.5rem 0;
+    }
 
-  a {
-    font-size: 1rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: #000;
-  }
+    a:hover {
+      color: #C1111F;
+    }
 
-  .menu-item-55 {
-    margin-left: auto;
-    padding: 0;
+    a {
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .menu-item-55 {
+      margin-left: auto;
+      padding: 0;
+
+      a {
+        color: #fff;
+      }
+    }
   }
 }

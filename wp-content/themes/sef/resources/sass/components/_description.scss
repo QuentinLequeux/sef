@@ -1,0 +1,87 @@
+.description, .shop, .housing, .contact {
+  background-color: #fff;
+  padding-top: 5rem;
+
+  &__background {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.875rem;
+  }
+
+  @media screen and (max-width: 1000px){
+    &__background {
+      flex-direction: column;
+    }
+  }
+
+  &__support {
+    max-width: 50%;
+    margin: auto 0;
+  }
+
+  &__title {
+    font-size: 2.07375rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__image {
+    max-width: 100%;
+
+    img {
+      height: 400px;
+      width: 600px;
+      border-radius: 30px;
+    }
+  }
+
+  &__button {
+    font-weight: 700;
+    color: #fff;
+    background-color: #C1111F;
+    padding: .6rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+
+  &__button:hover {
+    background-color: #780000;
+    color: #fff;
+  }
+}
+
+.shop {
+
+  &__image {
+    order: 2;
+  }
+
+  &__support {
+    order: 1;
+  }
+}
+
+.contact {
+
+  &__background {
+    padding-bottom: 5rem;
+  }
+
+  &__image {
+    order: 2;
+  }
+
+  &__support {
+    order: 1;
+  }
+}
+
+.news {
+  background-color: #FDF0D5;
+}
