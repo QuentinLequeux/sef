@@ -1,0 +1,16 @@
+.news-page {
+  height: 600px;
+
+  &__banner {
+    background-image: url("/wp-content/themes/sef/resources/img/news.jpg");
+    background-size: cover;
+    background-position-y: center;
+    height: 400px;
+  }
+
+  &__title {
+    font-size: 2.98625rem;
+    padding: 13rem 0 0 10%;
+    color: #fff;
+  }
+}

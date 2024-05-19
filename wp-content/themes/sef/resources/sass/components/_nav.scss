@@ -10,6 +10,64 @@ header {
 
   .nav {
 
+    .burger {
+      display: none;
+      position: absolute;
+      right: 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .burger {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .burger-shower {
+        display: none;
+      }
+
+      .wrapper {
+        display: none;
+      }
+
+      .burger-menu {
+        display: none;
+        background-color: #fff;
+        height: 100vh;
+        width: 200px;
+        position: absolute; /* Position absolue pour s'afficher correctement */
+        left: -100px;
+        top: 40px; /* Positionnement en haut */
+      }
+
+      #burger:checked ~ .burger-menu {
+        display: block;
+      }
+
+      .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 3.4em;
+        height: 2.4em;
+        //line-height: .1em;
+        //border: .1em solid #ddd;
+        padding: 0 .8em .8em;
+        cursor:pointer;
+        position: relative; /* Position relative pour maintenir la structure */
+        z-index: 3; /* Placer la `label` au-dessus de tout */
+
+        .item {
+          width:30px;
+          height: 4px;
+          background: #000;
+          //border: 0;
+          //border: none;
+        }
+      }
+    }
+
     .menu {
       display: flex;
       width: 80vw;

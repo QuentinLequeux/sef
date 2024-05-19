@@ -4,11 +4,18 @@ html {
 
   .shopp {
 
-    .map__title {
-      width: 80vw;
-      margin: 10rem auto 0;
-      font-size: 2.488125rem;
-      font-weight: 500;
+    &__background {
+      background-image: url("/wp-content/themes/sef/resources/img/shop.jpg");
+      background-size: cover;
+      background-position-y: center;
+      height: 400px;
+
+      .map__title {
+        padding: 13rem 0 0 10%;
+        font-size: 2.488125rem;
+        font-weight: 500;
+        color: #fff;
+      }
     }
 
     .map {

@@ -13,14 +13,14 @@
                             <a title="Vers la page nous soutenir" href="http://localhost:8888/nous-soutenir/">Nous&nbsp;soutenir</a>
                         </li>
                         <li>
-                            <a title="Vers la page boutiques" href="http://localhost:8888/accueil/">Boutiques</a>
+                            <a title="Vers la page boutiques" href="http://localhost:8888/boutiques/">Boutiques</a>
                         </li>
                         <li>
                             <a title="Vers la page actualités"
-                               href="http://localhost:8888/accueil/">Actualit&eacute;s</a>
+                               href="http://localhost:8888/actualites/">Actualit&eacute;s</a>
                         </li>
                         <li>
-                            <a title="vers la page contact" href="http://localhost:8888/accueil/">Contact</a>
+                            <a title="vers la page contact" href="http://localhost:8888/contact/">Contact</a>
                         </li>
                     </ul>
                 </li>

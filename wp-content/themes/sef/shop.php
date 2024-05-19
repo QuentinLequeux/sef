@@ -5,7 +5,9 @@ Template Name: Shop
 ?>
 <?= get_header(); ?>
     <main class="shopp">
-        <h2 class="map__title" aria-level="2"><?= get_the_title(181) ?></h2>
+        <div class="shopp__background">
+            <h2 class="map__title" aria-level="2"><?= get_the_title(181) ?></h2>
+        </div>
         <div class="map"></div>
         <section class="shop1">
             <div class="shop1__image">

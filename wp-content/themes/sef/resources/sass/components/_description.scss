@@ -35,8 +35,8 @@
     max-width: 100%;
 
     img {
-      height: 400px;
-      width: 600px;
+      height: auto;
+      max-width: 100%;
       border-radius: 30px;
     }
   }
@@ -84,4 +84,35 @@
 
 .news {
   background-color: #FDF0D5;
+
+  &__background {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-top: 5rem;
+    font-size: 2.07375rem;
+  }
+
+  &__link {
+    margin-top: 5.5rem;
+    color: #000;
+  }
+
+  &__content {
+    display: flex;
+    max-width: 80vw;
+    margin: 2rem auto 5rem;
+    justify-content: space-between;
+
+    div {
+      background-color: #fff;
+      border-radius: 20px;
+      height: 200px;
+      width: 400px;
+    }
+  }
 }

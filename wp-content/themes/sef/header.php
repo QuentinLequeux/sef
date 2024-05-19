@@ -18,5 +18,20 @@
             <h2 class="sro">Navigation principale</h2>
             <?php wp_nav_menu(['theme_location' => 'main']); ?>
         </div>
+        <div class="burger">
+            <input type="checkbox" class="burger-shower" id="burger">
+            <label class="hamburger" for="burger">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </label>
+            <ul class="burger-menu">
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Accueil</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Nous&nbsp;soutenir</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Boutiques</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Actualités</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 </header>

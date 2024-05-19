@@ -5,10 +5,12 @@ Template Name: Help
 ?>
 <?= get_header(); ?>
 <main class="help">
-    <h2 class="help__title"><?= get_the_title(189) ?></h2>
+    <div class="help__background">
+        <h2 class="help__title"><?= get_the_title(189) ?></h2>
+    </div>
     <section class="donate">
         <div class="donate__image">
-            <img src="/wp-content/themes/sef/resources/img/help.jpg">
+            <img src="/wp-content/themes/sef/resources/img/help.jpg" width="600" height="400">
         </div>
         <div class="donate__support">
             <h2 class="donate__title" aria-level="2">
@@ -24,7 +26,7 @@ Template Name: Help
     </section>
     <section class="donate2">
         <div class="donate2__image">
-            <img src="/wp-content/themes/sef/resources/img/donate2.jpg">
+            <img src="/wp-content/themes/sef/resources/img/donate2.jpg" width="600" height="400">
         </div>
         <div class="donate2__support">
             <h2 class="donate2__title" aria-level="2">
@@ -37,7 +39,7 @@ Template Name: Help
     </section>
     <section class="volunteer">
         <div class="volunteer__image">
-            <img src="/wp-content/themes/sef/resources/img/volunteer.jpg">
+            <img src="/wp-content/themes/sef/resources/img/volunteer.jpg" width="600" height="400">
         </div>
         <div class="volunteer__support">
             <h2 class="volunteer__title" aria-level="2">
@@ -50,7 +52,7 @@ Template Name: Help
     </section>
     <section class="legs">
         <div class="legs__image">
-            <img src="/wp-content/themes/sef/resources/img/legs.jpg">
+            <img src="/wp-content/themes/sef/resources/img/legs.jpg" width="600" height="400">
         </div>
         <div class="legs__support">
             <h2 class="legs__title" aria-level="2">
@@ -59,6 +61,14 @@ Template Name: Help
             <p class="legs__text">
                 <?= get_the_content(null, false, 206); ?>
             </p>
+        </div>
+    </section>
+    <section class="support">
+        <div class="support__background">
+            <h2 class="support__title"><?= get_the_title(209) ?></h2>
+            <div class="support__image">
+                <a href="">Boutiques</a>
+            </div>
         </div>
     </section>
 </main>
