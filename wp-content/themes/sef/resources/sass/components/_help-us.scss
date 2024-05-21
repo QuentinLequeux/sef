@@ -14,12 +14,6 @@
     color: #fff;
   }
 
-  @media screen and (max-width: 1000px){
-    .donate, .donate2, .volunteer, .legs {
-      flex-direction: column;
-    }
-  }
-
   .donate, .donate2, .volunteer, .legs {
     max-width: 80vw;
     margin: 0 auto;
@@ -73,6 +67,26 @@
     }
   }
 
+  @media screen and (max-width: 1000px){
+    .donate, .donate2, .volunteer, .legs {
+      flex-direction: column;
+
+      &__image {
+        order: 2;
+      }
+
+      &__support {
+        order: 1;
+      }
+    }
+
+    .donate, .donate2, .volunteer, .legs {
+
+      &__support {
+        max-width: 100%;
+      }
+    }
+  }
 
   .legs {
     padding-bottom: 5rem;
@@ -95,8 +109,8 @@
       margin-top: 2rem;
       background-color: red;
       border-radius: 30px;
-      width: 600px;
-      height: 400px;
+      width: 100%;
+      height: auto;
 
       a {
         font-size: 2.07375rem;

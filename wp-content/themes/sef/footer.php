@@ -1,7 +1,9 @@
 <footer>
     <div class="footer">
         <nav class="footer__menu">
-            <h2 class="sro" aria-level="2">Navigation de bas de page</h2>
+            <h2 class="sro" aria-level="2">
+                Navigation de bas de page
+            </h2>
             <ul class="footer__menu-list">
                 <li class="footer__menu-li">
                     Navigation
@@ -28,14 +30,14 @@
                     Contact
                     <ul>
                         <li>
-                            <a title="Vers l'adresse google maps de l'asbl" href="http://localhost:8888/accueil/">Rue du
+                            <a title="Vers l'adresse google maps de l'asbl" href="#">Rue du
                                 march&eacute; 33, 4500 Huy</a>
                         </li>
                         <li>
-                            <a title="Appeler ce numéro" href="http://localhost:8888/accueil/">+32 85 21 57 52</a>
+                            <a title="Appeler ce numéro" href="#">+32 85 21 57 52</a>
                         </li>
                         <li>
-                            <a title="Envoyer un email" href="http://localhost:8888/accueil/">contact@sefasbl.com</a>
+                            <a title="Envoyer un email" href="#">contact@sefasbl.com</a>
                         </li>
                     </ul>
                 </li>
@@ -43,7 +45,7 @@
                     Suivez-nous
                     <ul>
                         <li>
-                            <a title="Vers la page Facebook de l'asbl" href="http://localhost:8888/accueil/">
+                            <a title="Vers la page Facebook de l'asbl" href="https://www.facebook.com/sef.huy">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                      x="0px" y="0px" width="25px" height="25px"
                                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"

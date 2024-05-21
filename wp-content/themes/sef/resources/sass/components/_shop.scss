@@ -51,11 +51,11 @@ html {
     }
 
     &__image {
-      max-width: 50%;
+      max-width: 100%;
 
       img {
-        height: 400px;
-        width: 600px;
+        height: auto;
+        width: 100%;
         border-radius: 30px;
       }
     }
@@ -68,6 +68,28 @@ html {
 
     &__support {
       order: 1;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .shopp {
+      .map {
+        height: 300px;
+      }
+    }
+
+    .shop1, .shop2, .shop3 {
+      flex-direction: column;
+
+      &__image {
+        order: 2;
+      }
+
+      &__support {
+        order: 1;
+        max-width: 100%;
+      }
     }
   }
 

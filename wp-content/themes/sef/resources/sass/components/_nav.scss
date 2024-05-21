@@ -3,9 +3,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: auto;
   background-color: #fff;
-  z-index: 1;
   box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
 
   .nav {
@@ -19,14 +18,14 @@ header {
     @media screen and (max-width: 1000px) {
       .burger {
         display: block;
-        margin-top: 1rem;
+        padding-top: 1rem;
       }
 
       .burger-shower {
         display: none;
       }
 
-      .wrapper {
+      &__wrapper {
         display: none;
       }
 
@@ -34,10 +33,23 @@ header {
         display: none;
         background-color: #fff;
         height: 100vh;
-        width: 200px;
-        position: absolute; /* Position absolue pour s'afficher correctement */
-        left: -100px;
-        top: 40px; /* Positionnement en haut */
+        width: 40vw;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        li:first-of-type {
+          margin-top: 6.25rem;
+        }
+
+        li {
+          margin-top: 3.125rem;
+
+          a {
+            text-decoration: none;
+            color: #000;
+          }
+        }
       }
 
       #burger:checked ~ .burger-menu {
@@ -49,45 +61,41 @@ header {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 3.4em;
-        height: 2.4em;
-        //line-height: .1em;
-        //border: .1em solid #ddd;
-        padding: 0 .8em .8em;
+        width: 3.4rem;
+        height: 2.4rem;
+        padding: 0 .8rem .8rem;
         cursor:pointer;
-        position: relative; /* Position relative pour maintenir la structure */
-        z-index: 3; /* Placer la `label` au-dessus de tout */
+        position: relative;
+        z-index: 1;
 
         .item {
-          width:30px;
+          width: 30px;
           height: 4px;
           background: #000;
-          //border: 0;
-          //border: none;
         }
       }
     }
 
     .menu {
       display: flex;
-      width: 80vw;
+      max-width: 80vw;
       margin: auto;
       gap: 3rem;
-    }
 
-    .menu li {
-      padding: 1.5rem 0;
-    }
+      li {
+        padding: 1.5rem 0;
 
-    a:hover {
-      color: #C1111F;
-    }
+      }
+      a:hover {
+        color: #C1111F;
+      }
 
-    a {
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      color: #000;
+      a {
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+      }
     }
 
     .menu-item-55 {

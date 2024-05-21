@@ -30,7 +30,7 @@ Template Name: Accueil
                     <p class="description__text">
                         <?= get_the_content(null, false, 131); ?>
                     </p>
-                    <a class="description__button" href="http://localhost:8888/"><?= get_the_content(null, false, 160) ?></a>
+                    <a class="description__button" href="http://localhost:8888/nous-soutenir/"><?= get_the_content(null, false, 160) ?></a>
                 </div>
             </div>
         </section>
@@ -62,7 +62,7 @@ Template Name: Accueil
                     <p class="housing__text">
                         <?= get_the_content(null, false, 162); ?>
                     </p>
-                    <a class="description__button" href="http://localhost:8888/"><?= get_the_content(null, false, 185) ?></a>
+                    <a class="description__button" href="http://localhost:8888/contact/"><?= get_the_content(null, false, 185) ?></a>
                 </div>
             </div>
         </section>
@@ -78,14 +78,14 @@ Template Name: Accueil
                     <p class="contact__text">
                         <?= get_the_content(null, false, 164); ?>
                     </p>
-                    <a class="description__button" href="http://localhost:8888/"><?= get_the_content(null, false, 185) ?></a>
+                    <a class="description__button" href="http://localhost:8888/contact/"><?= get_the_content(null, false, 185) ?></a>
                 </div>
             </div>
         </section>
         <section class="news">
             <div class="news__background">
                 <h2 class="news__title">Les dernières actualités</h2>
-                <a class="news__link" href="http://localhost:8888/actualites/" title="Vers la page actualités">Voir plus</a>
+                <a class="news__link" href="http://localhost:8888/actualites/" title="Vers la page actualités">Voir&nbsp;plus</a>
             </div>
             <div class="news__content">
                 <div></div>

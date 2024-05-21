@@ -10,6 +10,18 @@
   }
 
   @media screen and (max-width: 1000px){
+    .description, .shop, .housing, .contact {
+
+      &__image {
+        order: 1;
+      }
+
+      &__support {
+        order: 2;
+        max-width: 100%;
+      }
+    }
+
     &__background {
       flex-direction: column;
     }

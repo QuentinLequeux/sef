@@ -8,30 +8,28 @@ footer {
     &__menu-list{
       display: flex;
       justify-content: space-between;
-      margin: 0 auto;
 
       @media screen and (max-width: 900px){
         flex-direction: column;
       }
-
     }
 
     &__menu-li {
       font-size: 1.44rem;
       font-weight: 700;
-      margin-top: 50px;
+      margin-top: 3.125rem;
 
       li:first-of-type {
-        margin: 25px 0 20px;
+        margin: 1.5625rem 0 1.25rem;
       }
 
       li {
         font-size: 1rem;
         font-weight: normal;
-        margin: 20px 0 20px;
+        margin: 1.25rem 0 1.25rem;
 
         &:has(a[id="donate"]) {
-          margin-top: 30px;
+          margin-top: 1.875rem;
         }
 
         span {
@@ -61,6 +59,6 @@ footer {
   .copyright {
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding: 1.875rem 0;
   }
 }

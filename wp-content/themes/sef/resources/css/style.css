@@ -76,9 +76,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 64px;
+  height: auto;
   background-color: #fff;
-  z-index: 1;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 header .nav .burger {
@@ -89,22 +88,32 @@ header .nav .burger {
 @media screen and (max-width: 1000px) {
   header .nav .burger {
     display: block;
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
   header .nav .burger-shower {
     display: none;
   }
-  header .nav .wrapper {
+  header .nav__wrapper {
     display: none;
   }
   header .nav .burger-menu {
     display: none;
     background-color: #fff;
     height: 100vh;
-    width: 200px;
-    position: absolute; /* Position absolue pour s'afficher correctement */
-    left: -100px;
-    top: 40px; /* Positionnement en haut */
+    width: 40vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header .nav .burger-menu li:first-of-type {
+    margin-top: 6.25rem;
+  }
+  header .nav .burger-menu li {
+    margin-top: 3.125rem;
+  }
+  header .nav .burger-menu li a {
+    text-decoration: none;
+    color: #000;
   }
   header .nav #burger:checked ~ .burger-menu {
     display: block;
@@ -114,12 +123,12 @@ header .nav .burger {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 3.4em;
-    height: 2.4em;
-    padding: 0 0.8em 0.8em;
+    width: 3.4rem;
+    height: 2.4rem;
+    padding: 0 0.8rem 0.8rem;
     cursor: pointer;
-    position: relative; /* Position relative pour maintenir la structure */
-    z-index: 3; /* Placer la `label` au-dessus de tout */
+    position: relative;
+    z-index: 1;
   }
   header .nav .hamburger .item {
     width: 30px;
@@ -129,17 +138,17 @@ header .nav .burger {
 }
 header .nav .menu {
   display: flex;
-  width: 80vw;
+  max-width: 80vw;
   margin: auto;
   gap: 3rem;
 }
 header .nav .menu li {
   padding: 1.5rem 0;
 }
-header .nav a:hover {
+header .nav .menu a:hover {
   color: #C1111F;
 }
-header .nav a {
+header .nav .menu a {
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
@@ -166,11 +175,6 @@ header .nav .menu-item-55 a {
   color: #fff;
 }
 
-@media screen and (max-width: 1000px) {
-  .home {
-    flex-direction: column;
-  }
-}
 .home {
   height: 80vh;
   max-width: 80vw;
@@ -182,7 +186,7 @@ header .nav .menu-item-55 a {
 }
 .home__wrapper {
   max-width: 50%;
-  max-height: 400px;
+  margin: auto 0;
 }
 .home__wrapper p {
   font-size: 19.2px;
@@ -196,9 +200,22 @@ header .nav .menu-item-55 a {
   max-width: 100%;
 }
 .home__image img {
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  height: auto;
   border-radius: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+  .home__image {
+    max-width: 100%;
+  }
+  .home__wrapper {
+    max-width: 100%;
+  }
 }
 
 .description, .shop, .housing, .contact {
@@ -212,6 +229,13 @@ header .nav .menu-item-55 a {
   gap: 1.875rem;
 }
 @media screen and (max-width: 1000px) {
+  .description .description__image, .description .shop__image, .description .housing__image, .description .contact__image, .shop .description__image, .shop .shop__image, .shop .housing__image, .shop .contact__image, .housing .description__image, .housing .shop__image, .housing .housing__image, .housing .contact__image, .contact .description__image, .contact .shop__image, .contact .housing__image, .contact .contact__image {
+    order: 1;
+  }
+  .description .description__support, .description .shop__support, .description .housing__support, .description .contact__support, .shop .description__support, .shop .shop__support, .shop .housing__support, .shop .contact__support, .housing .description__support, .housing .shop__support, .housing .housing__support, .housing .contact__support, .contact .description__support, .contact .shop__support, .contact .housing__support, .contact .contact__support {
+    order: 2;
+    max-width: 100%;
+  }
   .description__background, .shop__background, .housing__background, .contact__background {
     flex-direction: column;
   }
@@ -307,7 +331,6 @@ footer .footer {
 footer .footer__menu-list {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 @media screen and (max-width: 900px) {
   footer .footer__menu-list {
@@ -317,18 +340,18 @@ footer .footer__menu-list {
 footer .footer__menu-li {
   font-size: 1.44rem;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 footer .footer__menu-li li:first-of-type {
-  margin: 25px 0 20px;
+  margin: 1.5625rem 0 1.25rem;
 }
 footer .footer__menu-li li {
   font-size: 1rem;
   font-weight: normal;
-  margin: 20px 0 20px;
+  margin: 1.25rem 0 1.25rem;
 }
 footer .footer__menu-li li:has(a[id=donate]) {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 footer .footer__menu-li li span {
   font-weight: 700;
@@ -350,7 +373,7 @@ footer .line {
 footer .copyright {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 html {
@@ -395,11 +418,11 @@ html .shop1__text, html .shop2__text, html .shop3__text {
   line-height: 1.5rem;
 }
 html .shop1__image, html .shop2__image, html .shop3__image {
-  max-width: 50%;
+  max-width: 100%;
 }
 html .shop1__image img, html .shop2__image img, html .shop3__image img {
-  height: 400px;
-  width: 600px;
+  height: auto;
+  width: 100%;
   border-radius: 30px;
 }
 html .shop2__image {
@@ -407,6 +430,21 @@ html .shop2__image {
 }
 html .shop2__support {
   order: 1;
+}
+@media screen and (max-width: 1000px) {
+  html .shopp .map {
+    height: 300px;
+  }
+  html .shop1, html .shop2, html .shop3 {
+    flex-direction: column;
+  }
+  html .shop1__image, html .shop2__image, html .shop3__image {
+    order: 2;
+  }
+  html .shop1__support, html .shop2__support, html .shop3__support {
+    order: 1;
+    max-width: 100%;
+  }
 }
 html .shop3 {
   padding-bottom: 5rem;
@@ -425,11 +463,6 @@ html .shop3 {
   padding: 13rem 0 0 10%;
   font-size: 2.488125rem;
   color: #fff;
-}
-@media screen and (max-width: 1000px) {
-  .help .donate, .help .donate2, .help .volunteer, .help .legs {
-    flex-direction: column;
-  }
 }
 .help .donate, .help .donate2, .help .volunteer, .help .legs {
   max-width: 80vw;
@@ -471,6 +504,20 @@ html .shop3 {
 .help .donate2__support, .help .legs__support {
   order: 1;
 }
+@media screen and (max-width: 1000px) {
+  .help .donate, .help .donate2, .help .volunteer, .help .legs {
+    flex-direction: column;
+  }
+  .help .donate__image, .help .donate2__image, .help .volunteer__image, .help .legs__image {
+    order: 2;
+  }
+  .help .donate__support, .help .donate2__support, .help .volunteer__support, .help .legs__support {
+    order: 1;
+  }
+  .help .donate__support, .help .donate2__support, .help .volunteer__support, .help .legs__support {
+    max-width: 100%;
+  }
+}
 .help .legs {
   padding-bottom: 5rem;
 }
@@ -489,8 +536,8 @@ html .shop3 {
   margin-top: 2rem;
   background-color: red;
   border-radius: 30px;
-  width: 600px;
-  height: 400px;
+  width: 100%;
+  height: auto;
 }
 .help .support__image a {
   font-size: 2.07375rem;
@@ -510,6 +557,12 @@ html .shop3 {
   color: #fff;
 }
 @media screen and (max-width: 1000px) {
+  .contact-page .contact-page__background {
+    height: 10%;
+  }
+  .contact-page .contact-page__title {
+    padding: 5rem 0 5rem 5rem;
+  }
   .contact-page .form {
     flex-direction: column;
   }
@@ -527,21 +580,54 @@ html .shop3 {
   margin-bottom: 2rem;
   padding: 2rem 0 0 2rem;
 }
-.contact-page .form p {
-  margin-bottom: 2rem;
-  padding-left: 2rem;
-}
 .contact-page .form__info {
   width: 50%;
-  height: 500px;
-  background-color: #fff;
+}
+.contact-page .form__info h3 {
+  font-size: 2.07375rem;
+  margin-bottom: 2rem;
+}
+.contact-page .form__info ul li {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.contact-page .form__info ul li a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 0.5rem;
+}
+.contact-page .form__info .line2 {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #000;
+  width: 50%;
 }
 .contact-page .form__contact {
   width: 50%;
-  height: 500px;
+  height: auto;
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 0 15px 0.1px;
+}
+.contact-page .form__contact p {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+.contact-page .form__contact .wpcf7-form-control {
+  width: 95%;
+  border-radius: 10px;
+  border: 1px solid #000;
+  padding: 1rem;
+}
+.contact-page .form__contact .wpcf7-form-control:focus {
+  border-color: #C1111F;
+}
+.contact-page .form__contact .wpcf7-submit {
+  background-color: #C1111F;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
 }
 @media screen and (max-width: 1000px) {
   .contact-page .form__contact {
