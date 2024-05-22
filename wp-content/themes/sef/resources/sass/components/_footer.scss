@@ -61,4 +61,10 @@ footer {
     justify-content: center;
     padding: 1.875rem 0;
   }
+
+  @media screen and (max-width: 900px){
+    .line {
+      margin-top: 1rem;
+    }
+  }
 }

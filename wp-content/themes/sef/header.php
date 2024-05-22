@@ -13,10 +13,11 @@
 </head>
 <body itemscope="" itemtype="https://schema.org/Organization">
 <header>
-    <h1 class="sro">
+    <h1 class="sro" itemprop="legalName">
         <?= get_bloginfo('name') ?>
     </h1>
     <nav class="nav">
+        <div class="nav__burger"></div>
         <div class="nav__wrapper">
             <h2 class="sro" aria-level="2">
                 Navigation principale

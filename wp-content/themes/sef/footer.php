@@ -85,5 +85,6 @@
         &copy; 2024 SEF. Tous droits r&eacute;serv&eacute;s.
     </p>
 </footer>
+<script src="<?= dw_asset('js/main.js'); ?>"></script>
 </body>
 </html>

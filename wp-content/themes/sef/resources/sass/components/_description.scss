@@ -6,10 +6,11 @@
     max-width: 80vw;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     gap: 1.875rem;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1000px) {
     .description, .shop, .housing, .contact {
 
       &__image {
@@ -57,7 +58,7 @@
     font-weight: 700;
     color: #fff;
     background-color: #C1111F;
-    padding: .6rem 1.5rem;
+    padding: .8rem 2rem;
     border-radius: 30px;
     text-decoration: none;
   }
@@ -116,6 +117,7 @@
 
   &__content {
     display: flex;
+    gap: 2rem;
     max-width: 80vw;
     margin: 2rem auto 5rem;
     justify-content: space-between;
@@ -123,8 +125,14 @@
     div {
       background-color: #fff;
       border-radius: 20px;
-      height: 200px;
-      width: 400px;
+      height: 300px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__content {
+      flex-direction: column;
     }
   }
 }

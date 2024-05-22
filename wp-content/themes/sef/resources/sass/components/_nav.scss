@@ -9,6 +9,10 @@ header {
 
   .nav {
 
+    &__burger {
+      display: none;
+    }
+
     .burger {
       display: none;
       position: absolute;
@@ -16,6 +20,20 @@ header {
     }
 
     @media screen and (max-width: 1000px) {
+      position: relative;
+
+      &__burger {
+        display: block;
+        height: 64px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #fff;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, .4);
+      }
+
       .burger {
         display: block;
         padding-top: 1rem;
@@ -66,11 +84,11 @@ header {
         padding: 0 .8rem .8rem;
         cursor:pointer;
         position: relative;
-        z-index: 1;
+        z-index: 2;
 
         .item {
           width: 30px;
-          height: 4px;
+          height: 3px;
           background: #000;
         }
       }
@@ -86,7 +104,11 @@ header {
         padding: 1.5rem 0;
 
       }
-      a:hover {
+      a:hover, a:focus {
+        color: #C1111F;
+      }
+
+      .menu-item.active a {
         color: #C1111F;
       }
 

@@ -1,25 +1,28 @@
 .help {
   background-color: #FDF0D5;
+  margin: 64px 0 0;
 
   &__background {
-    height: 400px;
+    height: auto;
     background-image: url("/wp-content/themes/sef/resources/img/support.jpg");
     background-position-y: center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   &__title {
-    padding: 13rem 0 0 10%;
+    padding: 10rem 0 10rem 10%;
     font-size: 2.488125rem;
     color: #fff;
   }
 
-  .donate, .donate2, .volunteer, .legs {
+  .donate, .materials, .volunteer, .legs {
     max-width: 80vw;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     gap: 1.875rem;
-    padding-top: 5rem;
+    padding-top: 4rem;
 
     &__support {
       max-width: 50%;
@@ -34,7 +37,7 @@
     &__text {
       font-size: 1rem;
       line-height: 1.5rem;
-      //margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     &__image {
@@ -56,7 +59,7 @@
     }
   }
 
-  .donate2, .legs {
+  .materials, .legs {
 
     &__image {
       order: 2;
@@ -67,55 +70,75 @@
     }
   }
 
-  @media screen and (max-width: 1000px){
-    .donate, .donate2, .volunteer, .legs {
-      flex-direction: column;
-
-      &__image {
-        order: 2;
-      }
-
-      &__support {
-        order: 1;
-      }
-    }
-
-    .donate, .donate2, .volunteer, .legs {
-
-      &__support {
-        max-width: 100%;
-      }
-    }
-  }
-
   .legs {
     padding-bottom: 5rem;
   }
 
   .support {
     background-color: #fff;
-
-    &__background {
-      width: 80vw;
-      margin: 0 auto;
-    }
+    padding-bottom: 5rem;
 
     &__title {
       font-size: 2.488125rem;
-      padding-top: 2rem;
+      padding-top: 4rem;
+      max-width: 80vw;
+      margin: 0 auto;
     }
 
-    &__image {
-      margin-top: 2rem;
-      background-color: red;
-      border-radius: 30px;
-      width: 100%;
-      height: auto;
+    &__background {
+      max-width: 80vw;
+      margin: 2rem auto 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1.875rem;
+    }
 
-      a {
-        font-size: 2.07375rem;
-        text-decoration: none;
+    &__shop, &__event {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+
+      h3 {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
         color: #fff;
+        font-size: 2.07375rem;
+        font-weight: 700;
+      }
+
+      img {
+        border-radius: 30px;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    &__title {
+      padding: 6rem 0 6rem 10%;
+    }
+
+    .donate, .materials, .volunteer, .legs {
+      flex-direction: column;
+
+      &__image {
+        order: 1;
+        padding-top: 1rem;
+      }
+
+      &__support {
+        order: 2;
+        max-width: 100%;
+      }
+    }
+
+    .support {
+
+      &__background {
+        flex-direction: column;
+        gap: 2rem;
       }
     }
   }
