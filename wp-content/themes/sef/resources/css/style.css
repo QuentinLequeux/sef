@@ -79,6 +79,7 @@ header {
   height: auto;
   background-color: #fff;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 header .nav__burger {
   display: none;
@@ -196,12 +197,11 @@ header .nav .menu-item-55 a {
 }
 
 .home {
-  height: 80vh;
   max-width: 80vw;
   background-color: #FDF0D5;
   display: flex;
   margin: 0 auto;
-  padding: 8rem 0 0;
+  padding: 8rem 0 5rem;
   gap: 10rem;
 }
 .home__wrapper {
@@ -210,8 +210,8 @@ header .nav .menu-item-55 a {
   order: 2;
 }
 .home__wrapper p {
-  font-size: 19.2px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
   padding-top: 1rem;
 }
 .home__title {
@@ -224,13 +224,14 @@ header .nav .menu-item-55 a {
 .home__image img {
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 2rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .home {
     flex-direction: column;
     gap: 1rem;
     height: auto;
+    padding-bottom: 1rem;
   }
   .home__text {
     padding-bottom: 3rem;
@@ -246,7 +247,7 @@ header .nav .menu-item-55 a {
 
 .description, .shop, .housing, .contact {
   background-color: #fff;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .description__background, .shop__background, .housing__background, .contact__background {
   max-width: 80vw;
@@ -255,13 +256,16 @@ header .nav .menu-item-55 a {
   justify-content: space-between;
   gap: 1.875rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .description .description__image, .description .shop__image, .description .housing__image, .description .contact__image, .shop .description__image, .shop .shop__image, .shop .housing__image, .shop .contact__image, .housing .description__image, .housing .shop__image, .housing .housing__image, .housing .contact__image, .contact .description__image, .contact .shop__image, .contact .housing__image, .contact .contact__image {
     order: 1;
   }
   .description .description__support, .description .shop__support, .description .housing__support, .description .contact__support, .shop .description__support, .shop .shop__support, .shop .housing__support, .shop .contact__support, .housing .description__support, .housing .shop__support, .housing .housing__support, .housing .contact__support, .contact .description__support, .contact .shop__support, .contact .housing__support, .contact .contact__support {
     order: 2;
     max-width: 100%;
+  }
+  .description .description__text, .description .shop__text, .description .housing__text, .description .contact__text, .shop .description__text, .shop .shop__text, .shop .housing__text, .shop .contact__text, .housing .description__text, .housing .shop__text, .housing .housing__text, .housing .contact__text, .contact .description__text, .contact .shop__text, .contact .housing__text, .contact .contact__text {
+    padding-bottom: 0.5rem;
   }
   .description__background, .shop__background, .housing__background, .contact__background {
     flex-direction: column;
@@ -279,6 +283,7 @@ header .nav .menu-item-55 a {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 .description__image, .shop__image, .housing__image, .contact__image {
   max-width: 100%;
@@ -286,14 +291,14 @@ header .nav .menu-item-55 a {
 .description__image img, .shop__image img, .housing__image img, .contact__image img {
   height: auto;
   max-width: 100%;
-  border-radius: 30px;
+  border-radius: 2rem;
 }
 .description__button, .shop__button, .housing__button, .contact__button {
   font-weight: 700;
   color: #fff;
   background-color: #C1111F;
   padding: 0.8rem 2rem;
-  border-radius: 30px;
+  border-radius: 2rem;
   text-decoration: none;
 }
 .description__button:hover, .shop__button:hover, .housing__button:hover, .contact__button:hover {
@@ -301,31 +306,33 @@ header .nav .menu-item-55 a {
   color: #fff;
 }
 
-.shop__image {
+.shop__image, .contact__image {
   order: 2;
 }
-.shop__support {
+.shop__support, .contact__support {
   order: 1;
 }
 
 .contact__background {
   padding-bottom: 5rem;
 }
-.contact__image {
-  order: 2;
-}
-.contact__support {
-  order: 1;
-}
 
 .news {
   background-color: #FDF0D5;
 }
-.news__background {
+.news__background, .news__content {
   max-width: 80vw;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+.news__background {
+  margin: 0 auto;
+}
+.news__background a {
+  text-decoration: none;
+}
+.news__background a:hover {
+  color: #C1111F;
 }
 .news__title {
   padding-top: 5rem;
@@ -336,15 +343,12 @@ header .nav .menu-item-55 a {
   color: #000;
 }
 .news__content {
-  display: flex;
   gap: 2rem;
-  max-width: 80vw;
   margin: 2rem auto 5rem;
-  justify-content: space-between;
 }
 .news__content div {
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 1.5rem;
   height: 300px;
   width: 100%;
 }
@@ -584,11 +588,15 @@ html .shop3 {
   color: #fff;
   font-size: 2.07375rem;
   font-weight: 700;
+  z-index: 1;
 }
 .help .support__shop img, .help .support__event img {
   border-radius: 30px;
   max-width: 100%;
   height: auto;
+}
+.help .support__shop a:hover, .help .support__event a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 900px) {
   .help__title {
@@ -611,31 +619,24 @@ html .shop3 {
   }
 }
 
+.contact-page {
+  margin: 64px 0 0;
+}
 .contact-page__background {
-  height: 400px;
+  height: auto;
   background-image: url("/wp-content/themes/sef/resources/img/contact2.jpg");
   background-position-y: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .contact-page__title {
   font-size: 2.98625rem;
-  padding: 13rem 0 0 10%;
+  padding: 10rem 0 10rem 10%;
   color: #fff;
-}
-@media screen and (max-width: 1000px) {
-  .contact-page .contact-page__background {
-    height: 10%;
-  }
-  .contact-page .contact-page__title {
-    padding: 5rem 0 5rem 5rem;
-  }
-  .contact-page .form {
-    flex-direction: column;
-  }
 }
 .contact-page .form {
   padding: 5rem 0;
-  width: 80vw;
+  max-width: 80vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -647,7 +648,7 @@ html .shop3 {
   padding: 2rem 0 0 2rem;
 }
 .contact-page .form__info {
-  width: 50%;
+  max-width: 50%;
 }
 .contact-page .form__info h3 {
   font-size: 2.07375rem;
@@ -655,68 +656,106 @@ html .shop3 {
 }
 .contact-page .form__info ul li {
   display: flex;
-  align-items: center;
-  padding-bottom: 2rem;
+  align-items: end;
+  padding-bottom: 1.5rem;
 }
 .contact-page .form__info ul li a {
   text-decoration: none;
   color: #000;
   padding-left: 0.5rem;
 }
+.contact-page .form__info ul li p {
+  padding-left: 0.5rem;
+}
+.contact-page .form__info ul li a:hover {
+  text-decoration: underline;
+}
 .contact-page .form__info .line2 {
-  margin-bottom: 2rem;
+  margin: 1rem 0 2rem;
   border-bottom: 1px solid #000;
-  width: 50%;
+  max-width: 75%;
 }
 .contact-page .form__contact {
   width: 50%;
   height: auto;
   background-color: #fff;
-  border-radius: 30px;
-  box-shadow: 0 0 15px 0.1px;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem 0.1px rgba(0, 0, 0, 0.4);
 }
 .contact-page .form__contact p {
   margin-bottom: 2rem;
   padding-left: 2rem;
 }
+.contact-page .form__contact label {
+  font-weight: 700;
+}
+.contact-page .form__contact textarea {
+  max-width: 95%;
+  min-width: 95%;
+}
 .contact-page .form__contact .wpcf7-form-control {
   width: 95%;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 1px solid #000;
   padding: 1rem;
-}
-.contact-page .form__contact .wpcf7-form-control:focus {
-  border-color: #C1111F;
 }
 .contact-page .form__contact .wpcf7-submit {
   background-color: #C1111F;
   padding: 1rem 0;
   border: none;
-  border-radius: 10px;
+  border-radius: 1rem;
   color: #fff;
+  font-weight: 700;
+}
+.contact-page .form__contact .wpcf7-submit:hover {
+  background-color: #780000;
+  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
   .contact-page .form__contact {
     width: 100%;
   }
+  .contact-page .form__contact textarea {
+    max-width: 90%;
+    min-width: 90%;
+  }
+  .contact-page .form__contact .wpcf7-form-control {
+    width: 90%;
+  }
   .contact-page .form__info {
-    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .contact-page .contact-page__title {
+    padding: 6rem 0 6rem 10%;
+  }
+  .contact-page .form {
+    flex-direction: column;
+    gap: 5rem;
   }
 }
 
 .news-page {
-  height: 600px;
+  margin: 64px 0 0;
+  height: 100vh;
 }
 .news-page__banner {
   background-image: url("/wp-content/themes/sef/resources/img/news.jpg");
   background-size: cover;
   background-position-y: center;
-  height: 400px;
+  background-repeat: no-repeat;
+  height: auto;
 }
 .news-page__title {
   font-size: 2.98625rem;
-  padding: 13rem 0 0 10%;
+  padding: 10rem 0 10rem 10%;
   color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .news-page__title {
+    padding: 6rem 0 6rem 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

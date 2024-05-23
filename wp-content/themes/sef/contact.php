@@ -1,25 +1,25 @@
 <?php
 /*
 Template Name: Contact
- */
+*/
 ?>
 <?= get_header(); ?>
     <main class="contact-page">
         <div class="contact-page__background">
-            <h2 class="contact-page__title" aria-level="2">
-                Nous contacter
+            <h2 class="contact-page__title" aria-level="2" role="heading">
+                Nous&nbsp;contacter
             </h2>
         </div>
         <section class="form">
             <div class="form__info">
-                <h3 aria-level="3">
+                <h3 aria-level="3" role="heading">
                     Coordonn&eacute;es
                 </h3>
                 <ul>
-                    <li>
+                    <li itemprop="address">
                         <svg version="1.1" id="Glyph" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
-                             width="25px" height="25px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;"
+                             width="20px" height="20px" viewBox="0 0 32 32"
                              xml:space="preserve">
                         <path id="XMLID_219_" d="M30.9,16.5c-0.3,0.9-1.2,1.5-2.1,1.5H28v11c0,0.6-0.4,1-1,1h-6v-7c0-2.8-2.2-5-5-5s-5,2.2-5,5v7H5
                             c-0.6,0-1-0.4-1-1V18H3.2c-0.9,0-1.8-0.6-2.1-1.5s-0.1-1.9,0.6-2.5L13.4,3c1.4-1.4,3.7-1.4,5.1,0l11.7,11.1
@@ -30,25 +30,25 @@ Template Name: Contact
                             <?= get_the_content(null, false, 225) ?>
                         </a>
                     </li>
-                    <li>
+                    <li itemprop="email">
                         <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
-                             width="25px" height="25px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;"
+                             width="20px" height="20px" viewBox="0 0 64 64"
                              xml:space="preserve">
                             <g id="Glyph_copy_2">
                                 <path d="M63.1,10c-0.9-1.3-2.4-2.2-4.1-2.2H5c-1.7,0-3.2,0.8-4.1,2.1l31.2,26L63.1,10z"/>
                                 <path d="M0,14.3v36.9c0,2.8,2.2,5,5,5h54c2.8,0,5-2.2,5-5V14.5L32.1,41.1L0,14.3z"/>
                             </g>
                         </svg>
-                        <a href="#" title="Envoyer un email">
+                        <a href="mailto:contact@sefasbl.com" title="Envoyer un email">
                             <?= get_the_content(null, false, 227) ?>
                         </a>
                     </li>
-                    <li>
+                    <li itemprop="telephone">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
-                             width="25px" height="25px" viewBox="0 0 477.2 477.2"
-                             style="enable-background:new 0 0 477.2 477.2;" xml:space="preserve">
+                             width="20px" height="20px" viewBox="0 0 477.2 477.2"
+                             xml:space="preserve">
                             <g>
                                 <path d="M475,380.3l-2.4-7.2c-5.6-16.7-24.1-34.2-41-38.8l-62.7-17.1c-17-4.6-41.2,1.6-53.7,14L292.6,354
                                     c-82.5-22.3-147.1-86.9-169.4-169.4l22.7-22.7c12.4-12.4,18.7-36.7,14-53.7l-17.1-62.7c-4.6-17-22.1-35.4-38.8-41l-7.2-2.4
@@ -56,14 +56,14 @@ Template Name: Contact
                                     c0.6,0,18.3-3.8,24.4-9.8l33.9-33.9C474.9,420.9,480.6,397,475,380.3z"/>
                             </g>
                         </svg>
-                        <a href="#" title="Appeler ce numéro">
+                        <a href="tel:+3285215752" title="Appeler ce numéro">
                             <?= get_the_content(null, false, 229) ?>
                         </a>
                     </li>
                     <li>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                             x="0px" y="0px" width="25px" height="25px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                             x="0px" y="0px" width="20px" height="20px"
+                             viewBox="0 0 512 512"
                              xml:space="preserve">
                             <g>
                                 <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9
@@ -81,7 +81,7 @@ Template Name: Contact
                     <li>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
-                             width="25px" height="25px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                             width="20px" height="20px" viewBox="0 0 512 512"
                              xml:space="preserve">
                         <g>
                             <g>
@@ -109,22 +109,26 @@ Template Name: Contact
                             </g>
                         </g>
                         </svg>
-                        <a>
+                        <p>
                             <?= get_the_content(null, false, 233) ?>
-                        </a>
+                        </p>
                     </li>
                 </ul>
                 <div class="line2"></div>
-                <h3 aria-level="3">
-                    Heures d'ouverture
+                <h3 aria-level="3" role="heading">
+                    Heures&nbsp;d'ouverture
                 </h3>
                 <p>
                     <?= get_the_content(null, false, 215) ?>
                 </p>
             </div>
             <div class="form__contact">
-                <h2>Formulaire de contact</h2>
-                <p class="required">Les champs marqués d'un * sont obligatoires</p>
+                <h2 aria-level="2" role="heading">
+                    Formulaire de contact
+                </h2>
+                <p class="form__required">
+                    Les champs marqués d'un * sont obligatoires
+                </p>
                 <?= apply_filters('the_content', '[contact-form-7 id="1d31e04" title="Contact form 1"]'); ?>
             </div>
         </section>

@@ -74,7 +74,7 @@ Template Name: Nous soutenir
         </h2>
         <div class="support__background">
             <div class="support__shop">
-                <h3 aria-level="3" role="heading">
+                <h3 aria-level="3" role="heading" itemprop="name">
                     Boutiques
                 </h3>
                 <a href="http://localhost:8888/boutiques/" title="Vers la page boutiques">
@@ -82,7 +82,7 @@ Template Name: Nous soutenir
                 </a>
             </div>
             <div class="support__event">
-                <h3 aria-level="3" role="heading">
+                <h3 aria-level="3" role="heading" itemprop="name">
                     &Eacute;v&egrave;nements
                 </h3>
                 <a href="http://localhost:8888/actualites/" title="Vers la page actualités">

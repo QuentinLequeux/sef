@@ -30,14 +30,15 @@
                     Contact
                     <ul>
                         <li>
-                            <a title="Vers l'adresse google maps de l'asbl" href="#">Rue du
-                                march&eacute; 33, 4500 Huy</a>
+                            <a title="Vers l'adresse google maps de l'asbl" href="https://www.google.com/maps/place/Sef/@50.5224225,5.2314883,16z/data=!4m10!1m2!2m1!1ssef+huy!3m6!1s0x47c1a9782e36484f:0x5f8a70797f244341!8m2!3d50.5178689!4d5.243756!15sCgdzZWYgaHV5kgEFc3RvcmXgAQA!16s%2Fg%2F11j08bhsgt?entry=ttu">
+                                Rue du march&eacute; 33, 4500 Huy
+                            </a>
                         </li>
                         <li>
-                            <a title="Appeler ce numéro" href="#">+32 85 21 57 52</a>
+                            <a title="Appeler ce numéro" href="tel:+3285215752">+32 85 21 57 52</a>
                         </li>
                         <li>
-                            <a title="Envoyer un email" href="#">contact@sefasbl.com</a>
+                            <a title="Envoyer un email" href="mailto:contact@sefasbl.com">contact@sefasbl.com</a>
                         </li>
                     </ul>
                 </li>
@@ -48,7 +49,7 @@
                             <a title="Vers la page Facebook de l'asbl" href="https://www.facebook.com/sef.huy">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                      x="0px" y="0px" width="25px" height="25px"
-                                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                     viewBox="0 0 512 512"
                                      xml:space="preserve">
                                     <g>
                                         <path d="M308.3,508.5c-2.5,0.1-4.1,0.3-5.7,0.3c-34.2,0-68.3-0.1-102.5,0.1c-4.8,0-6.1-1.3-6.1-6.1c0.1-79.6,0.1-159.3,0.1-238.9

@@ -1,6 +1,6 @@
 .description, .shop, .housing, .contact {
   background-color: #fff;
-  padding-top: 5rem;
+  padding-top: 4rem;
 
   &__background {
     max-width: 80vw;
@@ -10,7 +10,7 @@
     gap: 1.875rem;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 900px) {
     .description, .shop, .housing, .contact {
 
       &__image {
@@ -20,6 +20,10 @@
       &__support {
         order: 2;
         max-width: 100%;
+      }
+
+      &__text {
+        padding-bottom: .5rem;
       }
     }
 
@@ -42,6 +46,7 @@
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
   }
 
   &__image {
@@ -50,7 +55,7 @@
     img {
       height: auto;
       max-width: 100%;
-      border-radius: 30px;
+      border-radius: 2rem;
     }
   }
 
@@ -59,7 +64,7 @@
     color: #fff;
     background-color: #C1111F;
     padding: .8rem 2rem;
-    border-radius: 30px;
+    border-radius: 2rem;
     text-decoration: none;
   }
 
@@ -69,7 +74,7 @@
   }
 }
 
-.shop {
+.shop, .contact {
 
   &__image {
     order: 2;
@@ -85,24 +90,27 @@
   &__background {
     padding-bottom: 5rem;
   }
-
-  &__image {
-    order: 2;
-  }
-
-  &__support {
-    order: 1;
-  }
 }
 
 .news {
   background-color: #FDF0D5;
 
-  &__background {
+  &__background, &__content {
     max-width: 80vw;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+  }
+
+  &__background {
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #C1111F;
+    }
   }
 
   &__title {
@@ -116,15 +124,12 @@
   }
 
   &__content {
-    display: flex;
     gap: 2rem;
-    max-width: 80vw;
     margin: 2rem auto 5rem;
-    justify-content: space-between;
 
     div {
       background-color: #fff;
-      border-radius: 20px;
+      border-radius: 1.5rem;
       height: 300px;
       width: 100%;
     }
