@@ -5,11 +5,11 @@ Template Name: Nous soutenir
 ?>
 <?= get_header(); ?>
 <main class="help" itemscope="" itemtype="https://schema.org/Grant" itemprop="funding">
-    <div class="help__background">
+    <section class="help__background">
         <h2 class="help__title" aria-level="2" role="heading">
             Comment nous soutenir&nbsp;?
         </h2>
-    </div>
+    </section>
     <section class="donate">
         <div class="donate__image">
             <img src="/wp-content/themes/sef/resources/img/help.jpg" width="600" height="400" alt="Image d'une tirelire">
@@ -73,22 +73,22 @@ Template Name: Nous soutenir
             Diff&eacute;rentes mani&egrave;res de nous soutenir
         </h2>
         <div class="support__background">
-            <div class="support__shop">
+            <article class="support__shop">
                 <h3 aria-level="3" role="heading" itemprop="name">
                     Boutiques
                 </h3>
                 <a href="http://localhost:8888/boutiques/" title="Vers la page boutiques">
                     <img src="/wp-content/themes/sef/resources/img/depot.jpg" width="600" height="350" alt="image du dépot de l'association">
                 </a>
-            </div>
-            <div class="support__event">
+            </article>
+            <article class="support__event">
                 <h3 aria-level="3" role="heading" itemprop="name">
                     &Eacute;v&egrave;nements
                 </h3>
                 <a href="http://localhost:8888/actualites/" title="Vers la page actualités">
                     <img src="/wp-content/themes/sef/resources/img/event.jpg" width="600" height="350" alt="Image d'un feu d'artifice">
                 </a>
-            </div>
+            </article>
         </div>
     </section>
 </main>

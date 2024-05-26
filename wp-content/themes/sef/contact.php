@@ -5,11 +5,11 @@ Template Name: Contact
 ?>
 <?= get_header(); ?>
     <main class="contact-page">
-        <div class="contact-page__background">
+        <section class="contact-page__background">
             <h2 class="contact-page__title" aria-level="2" role="heading">
                 Nous&nbsp;contacter
             </h2>
-        </div>
+        </section>
         <section class="form">
             <div class="form__info">
                 <h3 aria-level="3" role="heading">
@@ -115,14 +115,16 @@ Template Name: Contact
                     </li>
                 </ul>
                 <div class="line2"></div>
-                <h3 aria-level="3" role="heading">
-                    Heures&nbsp;d'ouverture
-                </h3>
-                <p>
-                    <?= get_the_content(null, false, 215) ?>
-                </p>
+                <section>
+                    <h3 aria-level="3" role="heading">
+                        Heures&nbsp;d'ouverture
+                    </h3>
+                    <p>
+                        <?= get_the_content(null, false, 215) ?>
+                    </p>
+                </section>
             </div>
-            <div class="form__contact">
+            <section class="form__contact">
                 <h2 aria-level="2" role="heading">
                     Formulaire de contact
                 </h2>
@@ -130,7 +132,7 @@ Template Name: Contact
                     Les champs marqués d'un * sont obligatoires
                 </p>
                 <?= apply_filters('the_content', '[contact-form-7 id="1d31e04" title="Contact form 1"]'); ?>
-            </div>
+            </section>
         </section>
     </main>
 <?= get_footer(); ?>

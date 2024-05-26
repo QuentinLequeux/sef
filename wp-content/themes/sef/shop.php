@@ -4,12 +4,12 @@ Template Name: Boutiques
  */
 ?>
 <?= get_header(); ?>
-    <main class="shop-page" itemscope="" itemtype="https://schema.org/LocalBusiness">
-        <div class="shop-page__background">
+    <main class="shop-page" itemscope="" itemtype="https://schema.org/LocalBusiness" itemprop="parentOrganization">
+        <section class="shop-page__background">
             <h2 class="shop-page__title" aria-level="2" role="heading">
                 Où trouver nos magasins&nbsp;?
             </h2>
-        </div>
+        </section>
         <div class="map"></div>
         <section class="shop1">
             <div class="shop1__image">

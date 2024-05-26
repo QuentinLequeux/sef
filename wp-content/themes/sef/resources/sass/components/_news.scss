@@ -1,0 +1,98 @@
+.news-page {
+  margin: 64px 0 0;
+
+  &__banner {
+    background-image: url("/wp-content/themes/sef/resources/img/news.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 2.98625rem;
+    padding: 10rem 0 10rem 10%;
+    color: #fff;
+  }
+
+  &__container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 5rem;
+
+    article {
+      display: flex;
+      flex-direction: column;
+
+      a.news-page__image {
+        margin-top: 4rem;
+        height: auto;
+
+        img {
+          border-radius: 2rem;
+          max-width: 100%;
+        }
+      }
+
+      h3 {
+        font-size: 1.728125rem;
+        font-weight: 700;
+        padding: 1.5rem 0;
+      }
+
+      p:first-of-type {
+        opacity: .6;
+      }
+
+      p {
+        max-width: 350px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-bottom: 1.5rem;
+        font-size: 1rem;
+      }
+
+      a.news-page__image:hover {
+        //opacity: .8;
+        filter: blur(2px);
+      }
+
+      a.news-page__button:hover {
+        background-color: #780000;
+      }
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    background-color: #C1111F;
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    max-width: 150px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 1000px) {
+    &__title {
+      padding: 6rem 0 6rem 10%;
+    }
+
+    article:first-child {
+      margin-top: 2rem;
+    }
+
+    article {
+
+      a.news-page__image {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
