@@ -10,7 +10,7 @@ Template Name: Boutiques
                 Où trouver nos magasins&nbsp;?
             </h2>
         </section>
-        <div class="map"></div>
+        <div id="map"></div>
         <section class="shop1">
             <div class="shop1__image">
                 <img src="/wp-content/themes/sef/resources/img/bric-brac.jpg" width="600" height="400" alt="Image d'un Bric à Brac">

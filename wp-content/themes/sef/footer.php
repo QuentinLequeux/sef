@@ -87,5 +87,6 @@
     </p>
 </footer>
 <script src="<?= dw_asset('js/main.js'); ?>"></script>
+<script src="<?= dw_asset('js/map.js'); ?>"></script>
 </body>
 </html>

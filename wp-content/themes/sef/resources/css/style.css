@@ -118,23 +118,48 @@ header .nav .burger {
     display: none;
     background-color: #fff;
     height: 100vh;
-    width: 40vw;
+    width: 60vw;
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 1;
+  }
+  header .nav .burger-menu .burger-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 0 1rem 1rem;
   }
   header .nav .burger-menu li:first-of-type {
-    margin-top: 6.25rem;
+    margin-top: 5rem;
   }
   header .nav .burger-menu li {
-    margin-top: 3.125rem;
+    margin-top: 1rem;
   }
   header .nav .burger-menu li a {
+    font-size: 1.2rem;
+    font-weight: 700;
     text-decoration: none;
     color: #000;
   }
+  header .nav .social {
+    display: none;
+  }
   header .nav #burger:checked ~ .burger-menu {
     display: block;
+  }
+  header .nav #burger:checked ~ .overlay {
+    position: fixed;
+    left: 0;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+  }
+  header .nav #burger:checked ~ .social {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    bottom: 1rem;
   }
   header .nav .hamburger {
     display: flex;
@@ -380,7 +405,7 @@ header .nav .menu-item-55 a {
   font-weight: 700;
 }
 .news__content article a.news__image:hover {
-  filter: blur(2px);
+  opacity: 0.8;
 }
 .news__content article a.news__button:hover {
   background-color: #780000;
@@ -464,17 +489,16 @@ html .shop-page__background {
   background-repeat: no-repeat;
   height: auto;
 }
+html .shop-page #map {
+  height: 37.5rem;
+  max-width: 80vw;
+  margin: 4rem auto 0;
+  border-radius: 1rem;
+}
 html .shop-page__title {
   padding: 10rem 0 10rem 10%;
   font-size: 2.488125rem;
   color: #fff;
-}
-html .shop-page .map {
-  background-color: #fff;
-  width: 80vw;
-  height: 700px;
-  margin: 3.25rem auto 0;
-  border-radius: 30px;
 }
 html .shop1, html .shop2, html .shop3 {
   max-width: 80vw;
@@ -515,8 +539,8 @@ html .shop2__support {
   html .shop-page__title {
     padding: 6rem 0 6rem 10%;
   }
-  html .shop-page .map {
-    height: 400px;
+  html .shop-page #map {
+    height: 25rem;
   }
   html .shop1, html .shop2, html .shop3 {
     flex-direction: column;
@@ -829,7 +853,7 @@ html .shop3 {
   font-size: 1rem;
 }
 .news-page__container article a.news-page__image:hover {
-  filter: blur(2px);
+  opacity: 0.8;
 }
 .news-page__container article a.news-page__button:hover {
   background-color: #780000;
@@ -946,7 +970,7 @@ html .shop3 {
   font-weight: 700;
 }
 .articles .article__wrapper a.article__image:hover {
-  filter: blur(2px);
+  opacity: 0.8;
 }
 .articles .article__wrapper a.article__button:hover {
   background-color: #780000;
