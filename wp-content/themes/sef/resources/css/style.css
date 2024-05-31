@@ -238,6 +238,19 @@ header .nav .menu-item-55 a {
   font-size: 1.2rem;
   line-height: 1.75rem;
   padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.home__wrapper a {
+  font-weight: 700;
+  color: #fff;
+  background-color: #C1111F;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.home__wrapper a:hover {
+  background-color: #780000;
+  color: #fff;
 }
 .home__title {
   font-size: 2.488125rem;
@@ -257,6 +270,9 @@ header .nav .menu-item-55 a {
     gap: 1rem;
     height: auto;
     padding-bottom: 1rem;
+  }
+  .home__wrapper {
+    padding-bottom: 2rem;
   }
   .home__text {
     padding-bottom: 3rem;
@@ -981,6 +997,70 @@ html .shop3 {
   }
   .articles .article article {
     margin-top: 1rem;
+  }
+}
+
+.sef {
+  margin: 64px auto 0;
+  max-width: 80vw;
+}
+.sef__content:first-of-type {
+  padding-top: 4rem;
+}
+.sef__content {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+.sef__content h2 {
+  font-size: 2.07375rem;
+  padding-bottom: 1.5rem;
+}
+.sef__content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.sef__image {
+  max-width: 50%;
+}
+.sef__image img {
+  border-radius: 2rem;
+  width: 100%;
+  height: auto;
+}
+.sef__description {
+  max-width: 50%;
+  margin: auto 0;
+}
+.sef__button {
+  font-weight: 700;
+  color: #fff;
+  background-color: #C1111F;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+.sef__button:hover {
+  background-color: #780000;
+  color: #fff;
+}
+.sef section:nth-of-type(2) .sef__image {
+  order: 2;
+}
+.sef section:nth-of-type(2) .sef__content {
+  order: 1;
+}
+@media screen and (max-width: 1000px) {
+  .sef .sef__content {
+    flex-direction: column;
+  }
+  .sef .sef__image {
+    order: 1;
+    max-width: 100%;
+  }
+  .sef .sef__description {
+    order: 2;
+    max-width: 100%;
   }
 }
 

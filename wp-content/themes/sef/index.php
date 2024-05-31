@@ -13,6 +13,9 @@ Template Name: Accueil
                 <p class="home__text" itemprop="description">
                     <?= get_the_content(null, false, 114); ?>
                 </p>
+                <a href="http://localhost:8888/sef/" title="Vers la page SEF">
+                    A props de nous
+                </a>
             </div>
             <div class="home__image">
                 <img src="/wp-content/themes/sef/resources/img/sef.jpg" width="500" height="500"

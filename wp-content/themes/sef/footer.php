@@ -12,6 +12,9 @@
                             <a title="Vers la page d'accueil" href="http://localhost:8888/accueil/">Accueil</a>
                         </li>
                         <li>
+                            <a title="Vers la page SEF" href="http://localhost:8888/sef/">SEF</a>
+                        </li>
+                        <li>
                             <a title="Vers la page nous soutenir" href="http://localhost:8888/nous-soutenir/">Nous&nbsp;soutenir</a>
                         </li>
                         <li>
@@ -74,7 +77,7 @@
                             <p><span>BIC</span>: GEBABEBB</p>
                         </li>
                         <li>
-                            <a title="Vers la page nous soutenir" id="donate" href="http://localhost:8888/accueil/">Faire&nbsp;un&nbsp;don</a>
+                            <a title="Vers la page nous soutenir" id="donate" href="http://localhost:8888/nous-soutenir/">Faire&nbsp;un&nbsp;don</a>
                         </li>
                     </ul>
                 </li>

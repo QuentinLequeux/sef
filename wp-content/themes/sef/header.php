@@ -56,6 +56,7 @@
             </label>
             <ul class="burger-menu">
                 <li class="burger-item"><a href="http://localhost:8888/accueil/">Accueil</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/sef/">SEF</a></li>
                 <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Nous&nbsp;soutenir</a></li>
                 <li class="burger-item"><a href="http://localhost:8888/boutiques/">Boutiques</a></li>
                 <li class="burger-item"><a href="http://localhost:8888/actualites/">Actualit&eacute;s</a></li>
