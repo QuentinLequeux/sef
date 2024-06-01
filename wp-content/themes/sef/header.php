@@ -31,6 +31,9 @@
         })
         ({key: "AIzaSyAkqkHFhbOzbyex_ix6e6_8VpLmbqBJevs", v: "beta"});
     </script>
+    <link rel="icon" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
+    <link rel="apple-touch-icon" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
+    <link rel="apple-touch-icon-precomposed" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
     <title>Service d'Entraide Familiale - Huy</title>
 </head>
@@ -40,11 +43,18 @@
         <?= get_bloginfo('name') ?>
     </h1>
     <nav class="nav">
-        <div class="nav__burger"></div>
+        <div class="nav__burger">
+            <a class="nav__image" href="http://localhost:8888/accueil/" title="Vers la page d'accueil">
+                <img src="/wp-content/themes/sef/resources/img/favicon.svg" width="50" height="50" alt="Logo de l'association">
+            </a>
+        </div>
         <div class="nav__wrapper">
             <h2 class="sro" aria-level="2">
                 Navigation principale
             </h2>
+            <a class="nav__image" href="http://localhost:8888/accueil/" title="Vers la page d'accueil">
+                <img src="/wp-content/themes/sef/resources/img/favicon.svg" width="50" height="50" alt="Logo de l'association">
+            </a>
             <?php wp_nav_menu(['theme_location' => 'main']); ?>
         </div>
         <div class="burger">
@@ -55,12 +65,12 @@
                 <div class="item"></div>
             </label>
             <ul class="burger-menu">
-                <li class="burger-item"><a href="http://localhost:8888/accueil/">Accueil</a></li>
-                <li class="burger-item"><a href="http://localhost:8888/sef/">SEF</a></li>
-                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/">Nous&nbsp;soutenir</a></li>
-                <li class="burger-item"><a href="http://localhost:8888/boutiques/">Boutiques</a></li>
-                <li class="burger-item"><a href="http://localhost:8888/actualites/">Actualit&eacute;s</a></li>
-                <li class="burger-item"><a href="http://localhost:8888/contact/">Contact</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/accueil/" title="Vers la page d'accueil">Accueil</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/sef/" title="Vers la page sef">SEF</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/nous-soutenir/" title="Vers la page nous soutenir">Nous&nbsp;soutenir</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/boutiques/" title="Vers la page boutiques">Boutiques</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/actualites/" title="Vers la page actualités">Actualit&eacute;s</a></li>
+                <li class="burger-item"><a href="http://localhost:8888/contact/" title="Vers la page contact">Contact</a></li>
             </ul>
             <div class="overlay"></div>
             <a class="social" title="Vers la page Facebook de l'asbl" href="https://www.facebook.com/sef.huy">

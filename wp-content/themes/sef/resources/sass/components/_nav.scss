@@ -10,6 +10,12 @@ header {
 
   .nav {
 
+    &__image {
+      position: absolute;
+      top: .5rem;
+      left: 10%
+    }
+
     &__burger {
       display: none;
     }
@@ -149,6 +155,11 @@ header {
         text-decoration: none;
         color: #000;
       }
+    }
+
+    .menu-item-50, .menu-item-308, .menu-item-48, .menu-item-51, .menu-item-52, .menu-item-53 {
+      position: relative;
+      left: 6%;
     }
 
     .menu-item-55 {

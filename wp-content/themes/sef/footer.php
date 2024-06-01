@@ -50,7 +50,7 @@
                     <ul>
                         <li>
                             <a title="Vers la page Facebook de l'asbl" href="https://www.facebook.com/sef.huy">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
                                      x="0px" y="0px" width="25px" height="25px"
                                      viewBox="0 0 512 512"
                                      xml:space="preserve">

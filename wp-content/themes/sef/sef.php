@@ -30,7 +30,7 @@ Template Name: SEF
         endif; ?>
         <section class="sef__content">
             <div class="sef__image">
-                <img src="/wp-content/themes/sef/resources/img/rapport.jpg" width="600" height="400" alt="image des graphiques et statistiques">
+                <img src="/wp-content/themes/sef/resources/img/rapport.jpg" width="600" height="400" alt="image de graphiques et statistiques">
             </div>
             <div class="sef__description">
                 <h2 aria-level="2" role="heading">

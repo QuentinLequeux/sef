@@ -61,7 +61,7 @@ Template Name: Contact
                         </a>
                     </li>
                     <li>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px" width="20px" height="20px"
                              viewBox="0 0 512 512"
                              xml:space="preserve">
@@ -79,7 +79,7 @@ Template Name: Contact
                         </a>
                     </li>
                     <li>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg"
                              x="0px" y="0px"
                              width="20px" height="20px" viewBox="0 0 512 512"
                              xml:space="preserve">
