@@ -19,7 +19,11 @@
     padding: 5rem 0;
     max-width: 80vw;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 10rem;
 
@@ -40,7 +44,11 @@
       ul {
 
         li {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -webkit-box-align: end;
+          -ms-flex-align: end;
           align-items: end;
           padding-bottom: 1.5rem;
 
@@ -74,6 +82,7 @@
       height: auto;
       background-color: #fff;
       border-radius: 2rem;
+      -webkit-box-shadow: 0 0 1rem .1px rgba(0, 0, 0, .4);
       box-shadow: 0 0 1rem .1px rgba(0, 0, 0, .4);
 
       p {
@@ -143,6 +152,9 @@
     }
 
     .form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       gap: 5rem;
     }

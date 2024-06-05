@@ -85,9 +85,14 @@
         </nav>
     </div>
     <div class="line"></div>
-    <p class="copyright">
-        &copy; 2024 SEF. Tous droits r&eacute;serv&eacute;s.
-    </p>
+    <div class="footer__secondary">
+        <p>
+            &copy; 2024 SEF. Tous droits r&eacute;serv&eacute;s.
+        </p>
+        <a href="http://quentinlequeux.be" title="Lien vers la page web de l'auteur">
+            Cr&eacute;&eacute; par Quentin Lequeux
+        </a>
+    </div>
 </footer>
 <script src="<?= dw_asset('js/main.js'); ?>"></script>
 <script src="<?= dw_asset('js/map.js'); ?>"></script>

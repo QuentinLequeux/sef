@@ -1,11 +1,7 @@
-const actives = document.body.querySelectorAll(".menu-item a");
+const actives = document.body.querySelectorAll(".menu-item a:not(.menu-item-55 a)");
 
-actives.forEach(active => {
-    active.addEventListener("click", (e) => {
-        //e.preventDefault();
-        actives.forEach(active => {
-            active.classList.remove("active")
-        });
+actives.forEach((active) => {
+    if (active.href === window.location.href) {
         active.classList.add("active");
-    });
+    }
 });

@@ -1,17 +1,14 @@
-// cd wp-content/themes/sef/resources/sass/style.scss
-// sass —watch style.scss:../css/style.css
-
 html, html * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
   body {
     background-color: #FDF1D5;
-    font-family: lato, sans-serif;
+    font-family: lato, Arial, Helvetica, sans-serif;
   }
 }
 
 @import "reset";
-@import "fonts";
 @import "helpers";
 
 @import "components/nav";
