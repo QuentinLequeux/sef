@@ -8,6 +8,7 @@
 - [x] .gitignore
 - [x] README
 - [x] Architecture information
+- [x] Moodboard
 
 ## Palette de couleurs :
 
@@ -26,26 +27,22 @@ https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
 ## HTML
 
 - [x] head
-
-    -[x] meta description
-    -[x] meta keywords
-    -[x] meta author
-    -[x] meta viewport
-    -[x] meta charset
-    -[x] favicons
-    -[x] link
-    -[x] title
+    - [x] meta description
+    - [x] meta keywords
+    - [x] meta author
+    - [x] meta viewport
+    - [x] meta charset
+    - [x] favicons
+    - [x] link
+    - [x] title
 - [x] index.php
-
-    -[x] getTheTitle
-    -[x] getTheContent
-    -[x] getField
-    -[x] getPermalink
+    - [x] getTheTitle
+    - [x] getTheContent
+    - [x] getField
+    - [x] getPermalink
 - [x] header.php
-
     - [x] getHeader
 - [x] footer.php
-
     - [x] getFooter
     - [x] copyright
 - [x] functions.php
@@ -54,13 +51,10 @@ https://coolors.co/palette/780000-c1121f-fdf0d5-003049-669bbc
 - [x] help-us.php
 - [x] shop.php
 - [x] news.php
-
     -[x] getTheDate
 - [x] contact.php
-    
     - [x] Formulaire
   - [x] Icônes
-
 - [x] SRO
 - [x] Entités HTML
 - [x] aria-level + role
@@ -136,5 +130,6 @@ https://www.pexels.com/fr-fr/photo/ecouteurs-blancs-pres-des-papiers-269610/
 
 - [ ] Formulaire PHP
 - [ ] Compte utilisateur
+- [ ] Mise en ligne
 - [x] Exporter SQL
 - [x] Orthographe
