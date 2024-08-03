@@ -43,6 +43,9 @@
                         <li>
                             <a title="Envoyer un email" href="mailto:contact@sefasbl.com">contact@sefasbl.com</a>
                         </li>
+                        <li>
+                            <p>lundi - vendredi&nbsp;: 8h30 - 17h00</p>
+                        </li>
                     </ul>
                 </li>
                 <li class="footer__menu-li">

@@ -429,6 +429,7 @@ header .nav .menu-item-55 a {
 }
 .news__background a {
   text-decoration: none;
+  font-weight: 700;
 }
 .news__background a:hover {
   color: #C1111F;
@@ -544,6 +545,9 @@ footer .footer__menu-li li a {
 footer .footer__menu-li li a:hover {
   color: #FDF0D5;
 }
+footer .footer__menu-li li p {
+  margin: 1.25rem 0 1.25rem;
+}
 footer .footer__secondary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -605,6 +609,7 @@ html .shop-page__title {
   padding: 10rem 0 10rem 10%;
   font-size: 2.488125rem;
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 html .shop1, html .shop2, html .shop3 {
   max-width: 80vw;
@@ -881,6 +886,9 @@ html .shop3 {
 }
 .contact-page .form__info ul li a:hover {
   text-decoration: underline;
+}
+.contact-page .form__info strong {
+  font-weight: 700;
 }
 .contact-page .form__info .line2 {
   margin: 1rem 0 2rem;

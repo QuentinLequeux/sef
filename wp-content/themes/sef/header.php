@@ -36,12 +36,12 @@
     <link rel="apple-touch-icon-precomposed" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
     <link rel="stylesheet" href="<?= dw_asset('css/style.css'); ?>">
     <link rel="stylesheet" href="https://use.typekit.net/uru3cvy.css">
-    <title>Service d'Entraide Familiale - Huy</title>
+    <title><?= wp_title(''); ?> - Service d'Entraide Familiale - Huy</title>
 </head>
 <body itemscope="" itemtype="https://schema.org/Organization">
 <header>
     <h1 class="sro" itemprop="legalName">
-        <?= get_bloginfo('name') ?>
+        <?= wp_title(''); ?>
     </h1>
     <nav class="nav">
         <div class="nav__burger">
