@@ -178,8 +178,10 @@
         -o-text-overflow: ellipsis;
         text-overflow: ellipsis;
         white-space: nowrap;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
         font-size: 1rem;
+        height: 2rem;
       }
 
       a.news__button {

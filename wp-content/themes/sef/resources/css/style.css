@@ -205,7 +205,7 @@ header .nav .menu {
   display: -ms-flexbox;
   display: flex;
   max-width: 80vw;
-  margin: auto;
+  margin-left: 20%;
   gap: 3rem;
 }
 header .nav .menu li {
@@ -229,6 +229,7 @@ header .nav .menu-item-50, header .nav .menu-item-308, header .nav .menu-item-48
 }
 header .nav .menu-item-55 {
   margin-left: auto;
+  margin-right: 10%;
   padding: 0;
 }
 header .nav .menu-item-55 a {
@@ -467,8 +468,10 @@ header .nav .menu-item-55 a {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1rem;
+  height: 2rem;
 }
 .news__content article a.news__button {
   text-decoration: none;
@@ -1024,6 +1027,7 @@ html .shop3 {
   white-space: nowrap;
   padding-bottom: 1.5rem;
   font-size: 1rem;
+  height: 2rem;
 }
 .news-page__container article a.news-page__image:hover {
   opacity: 0.8;
@@ -1067,9 +1071,15 @@ html .shop3 {
   font-weight: 700;
   line-height: 1.5rem;
 }
+.articles__wrapper p:first-of-type {
+  text-align: center;
+}
 .articles__wrapper p {
   font-size: 1rem;
   line-height: 1.5rem;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: left;
 }
 .articles__wrapper p:first-of-type {
   padding: 2rem 0;

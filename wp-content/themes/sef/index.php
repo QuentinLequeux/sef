@@ -109,7 +109,7 @@ Template Name: Accueil
                 if ($news->have_posts()): while ($news->have_posts()): $news->the_post(); ?>
                     <article itemprop="publishingPrinciples" itemscope="" itemtype="https://schema.org/Article">
                         <a class="news__image" href="<?= get_permalink(); ?>" title="Vers la page <?= get_the_title(); ?>">
-                            <img src="<?= get_field('image'); ?>" width="400" height="250" alt="image">
+                            <img src="<?= get_field('image'); ?>" width="400" height="250" alt="image d'actualités">
                         </a>
                         <h3 aria-level="3" role="heading" itemprop="headline">
                             <?= get_the_title(); ?>

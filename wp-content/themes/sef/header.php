@@ -46,7 +46,7 @@
     <nav class="nav">
         <div class="nav__burger">
             <a class="nav__image" href="http://localhost:8888/accueil/" title="Vers la page d'accueil">
-                <img src="/wp-content/themes/sef/resources/img/favicon.svg" width="50" height="50" alt="Logo de l'association">
+                <img src="/wp-content/themes/sef/resources/img/logo.svg" width="150" height="50" alt="Logo de l'association">
             </a>
         </div>
         <div class="nav__wrapper">
@@ -54,7 +54,7 @@
                 Navigation principale
             </h2>
             <a class="nav__image" href="http://localhost:8888/accueil/" title="Vers la page d'accueil">
-                <img src="/wp-content/themes/sef/resources/img/favicon.svg" width="50" height="50" alt="Logo de l'association">
+                <img src="/wp-content/themes/sef/resources/img/logo.svg" width="150" height="50" alt="Logo de l'association">
             </a>
             <?php wp_nav_menu(['theme_location' => 'main']); ?>
         </div>
