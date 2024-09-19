@@ -29,7 +29,7 @@
                 }));
             d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
         })
-        ({key: "AIzaSyAkqkHFhbOzbyex_ix6e6_8VpLmbqBJevs", v: "beta"});
+        ({key: "", v: "beta"});
     </script>
     <link rel="icon" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
     <link rel="apple-touch-icon" type="image/svg" href="/wp-content/themes/sef/resources/img/favicon.svg">
